@@ -4,7 +4,7 @@ from main import calcular_area_triangulo
 
 def test_calcular_area_triangulo():
     # Resultado obtenido (real)
-    actual_result = calcular_area_triangulo(13, 3)
+    actual_result = calcular_area_triangulo(13, 6)
 
     # Resultado esperado
     # assert (estamos asegurando o verificando) que el 'actual result' sea igual que el 'expected result'
