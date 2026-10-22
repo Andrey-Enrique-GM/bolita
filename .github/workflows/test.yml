@@ -1,0 +1,23 @@
+name: Pruebas de área de triángulo
+
+on:
+  push
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v7
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Instalar pytest
+        run: python -m pip install -r requirements.txt
+
+      - name: Ejecutar Pruebas
+        run: python -m pytest
